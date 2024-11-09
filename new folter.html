@@ -34,9 +34,11 @@
 <body>
   <canvas width="400" height="400" id="game"></canvas>
   <div class="buttons">
-    <button onclick="moveLeft()">Left</button>
+    <br> <button onclick="moveLeft()">Left</button>
+    </br> 
     <button onclick="moveUp()">Up</button>
-    <button onclick="moveRight()">Right</button>
+    <br><button onclick="moveRight()">Right</button></br>
+    
     <button onclick="moveDown()">Down</button>
   </div>
 
@@ -149,8 +151,8 @@
     // Keyboard controls for additional support
     document.addEventListener('keydown', function(e) {
       if (e.which === 37) moveLeft();
-      else if (e.which === 38) moveUp();
-      else if (e.which === 39) moveRight();
+      else if (e.which === 48) moveUp();
+      else if (e.which === 59) moveRight();
       else if (e.which === 40) moveDown();
     });
 
